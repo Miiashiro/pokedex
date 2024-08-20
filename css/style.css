@@ -36,12 +36,27 @@ h1{
 }
 
 .pokemon_data{
+    display: flex;
     position: absolute;
+    align-items: center;
     font-weight: 600;
     color: #aaa;
     top: 57%;
-    right: 26.2%;
+    right: 26%;
     font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon_data div{
+    display: grid;
+    align-items: baseline;
+    justify-content: center;
+    align-content: space-between;
+    justify-items: end;
+    padding-right: 2%;
+}
+
+.type_pokemon, .type_pokemon_two{
+    width: 47%;
 }
 
 .pokemon_name{
